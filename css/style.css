@@ -36,7 +36,7 @@ img {
 }
 
 /* Navbar */
-#navbar {
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -48,23 +48,28 @@ img {
     position: fixed;
     top: 0px;
     padding: 0 30px;
+    transition: .5s;
 }
 
-#navbar .logo {
+.navbar.top {
+    background: transparent;
+}
+
+.navbar .logo {
     font-weight: 400;
 }
 
-#navbar a {
+.navbar a {
     color: #fff;
     padding: 10px 20px;
     margin: 0 5px;
 }
 
-#navbar a:hover {
+.navbar a:hover {
     border-bottom: #28a745 2px solid;
 }
 
-#navbar nav ul {
+.navbar nav ul {
     display: flex;
 }
 
@@ -224,13 +229,13 @@ img {
 
 /* Mobile */
 @media (max-width: 768px) {
-    #navbar {
+    .navbar {
         flex-direction: column;
         height: 120px;
         padding: 20px;
     }
 
-    #navbar a {
+    .navbar a {
         padding: 10px 10px;
         margin: 0 3px;
     }
